@@ -70,18 +70,26 @@ function formatDate(dateStr) {
   return d.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' });
 }
 
-// Filtra receitas
+// Filtra receitas e ordena pelas mais recentes primeiro
 function getFilteredRecipes() {
-  return recipes.filter(r => {
-    const matchCat = currentFilter === 'all' || r.categories.some(c => 
-      c.toLowerCase().includes(currentFilter.toLowerCase())
-    );
-    const matchSearch = !currentSearch || 
-      r.title.toLowerCase().includes(currentSearch) ||
-      r.excerpt.toLowerCase().includes(currentSearch) ||
-      r.categories.some(c => c.toLowerCase().includes(currentSearch));
-    return matchCat && matchSearch;
-  });
+  return recipes
+    .filter(r => {
+      const matchCat = currentFilter === 'all' || r.categories.some(c => 
+        c.toLowerCase().includes(currentFilter.toLowerCase())
+      );
+      const matchSearch = !currentSearch || 
+        r.title.toLowerCase().includes(currentSearch) ||
+        r.excerpt.toLowerCase().includes(currentSearch) ||
+        r.categories.some(c => c.toLowerCase().includes(currentSearch));
+      return matchCat && matchSearch;
+    })
+    .sort((a, b) => {
+      // Mais recentes primeiro (por data). Se empatar, a que está no final do JSON vem antes.
+      const da = a.date || '';
+      const db = b.date || '';
+      if (db !== da) return db.localeCompare(da);
+      return recipes.indexOf(b) - recipes.indexOf(a);
+    });
 }
 
 // Renderiza a home
