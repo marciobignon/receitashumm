@@ -349,6 +349,38 @@
       "Depois acrescente o tomate em fatias com cebolas em fatias tambem .",
       "Acrencente a manga enrolada no peito de peru.",
       "Acabe com o amendoim e azeite, limão e sal a gosto ."
+       ]
+  },
+  {
+    "id": "Salada de alho-poro",
+    "title": "Salada de alho-poró Especial",
+    "slug": "Salada de alho-poró",
+    "excerpt": "Salada de alho-poró .",
+    "image": "https://images.pexels.com/photos/27626299/pexels-photo-27626299.jpeg",
+    "date": "2026-10-03",
+    "author": "Chef humm",
+    "categories": ["sALADAS OU MOLHOS", "Alimentação Saudável"],
+    "difficulty": "Fácil / Iniciante",
+    "prepTime": "10 minutos",
+    "cookTime": "10 minutos",
+    "servings": "1 VASILHAS",
+    "description": "A salada de alho-poró é uma opção leve, nutritiva e versátil, combinando o sabor suave do alho-poró com frutas, legumes e molhos cremosos ou vinagretes.",
+    "ingredients": [
+      "2 talos de alho-poró",
+      "2 maçãs verdes sem casca e picadas",
+      "2 maços de rúcula",
+      "200 g de presunto picado",
+      "1 vidro de palmito picado",
+      "1 lata de milho",
+      "1 lata de ervilha",
+      "2 caixinhas de creme de leite",
+       "Maionese a gosto",
+    ],
+    "instructions": [
+      "Lave bem o alho-poró e corte apenas a parte branca em rodelas finas.",
+      "Em uma tigela grande, misture todos os ingredientes sólidos.",
+      "adicione o creme de leite e a maionese, mexendo bem até incorporar todos os sabores.",
+      "Agora é só servir gelada."
      
     ]
   }
