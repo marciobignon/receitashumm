@@ -7,7 +7,10 @@
     "image": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=80",
     "date": "2024-12-12",
     "author": "Chef Yum",
-    "categories": ["Alimentação Saudável", "Lanches"],
+    "categories": [
+      "Alimentação Saudável",
+      "Lanches"
+    ],
     "difficulty": "Fácil / Iniciante",
     "prepTime": "10 minutos",
     "cookTime": "0 minutos",
@@ -37,7 +40,10 @@
     "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=800&q=80",
     "date": "2024-12-10",
     "author": "Chef Yum",
-    "categories": ["Sopas", "Alimentação Saudável"],
+    "categories": [
+      "Sopas",
+      "Alimentação Saudável"
+    ],
     "difficulty": "Fácil / Iniciante",
     "prepTime": "10 minutos",
     "cookTime": "15 minutos",
@@ -69,7 +75,11 @@
     "image": "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=800&q=80",
     "date": "2024-12-08",
     "author": "Chef Yum",
-    "categories": ["Aves", "Lanches"],
+    "categories": [
+      "Aves",
+      "Lanches",
+      "Airfryer"
+    ],
     "difficulty": "Médio",
     "prepTime": "20 minutos",
     "cookTime": "25 minutos",
@@ -102,7 +112,11 @@
     "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&q=80",
     "date": "2024-12-05",
     "author": "Chef Yum",
-    "categories": ["Alimentação Saudável", "Lanches", "Saladas e molhos"],
+    "categories": [
+      "Alimentação Saudável",
+      "Lanches",
+      "Saladas e molhos"
+    ],
     "difficulty": "Fácil / Iniciante",
     "prepTime": "8 minutos",
     "cookTime": "5 minutos",
@@ -134,7 +148,11 @@
     "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
     "date": "2024-12-03",
     "author": "Chef Yum",
-    "categories": ["Doces e Sobremesas", "Bolos e tortas"],
+    "categories": [
+      "Doces e Sobremesas",
+      "Bolos e tortas",
+      "Microondas"
+    ],
     "difficulty": "Fácil / Iniciante",
     "prepTime": "15 minutos",
     "cookTime": "30 minutos",
@@ -161,38 +179,42 @@
     ]
   },
   {
-    "id": "pizza-mussarela",
-  "title": "Pizza Mussarela Caseira",
-  "slug": "pizza-margherita",
-  "excerpt": "Massa fina e crocante, molho de tomate fresco, mussarela e manjericão. Sabor de Itália em casa.",
-  "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80",
-  "date": "2024-12-01",
-  "author": "Chef Yum",
-  "categories": ["Massas", "Lanches"],
-  "difficulty": "Médio",
-  "prepTime": "30 minutos + 1h descanso",
-  "cookTime": "12 minutos",
-  "servings": "2 pizzas médias",
-  "description": "Receita clássica napolitana adaptada para o forno doméstico. O segredo está na massa bem fermentada e no forno bem quente.",
-  "ingredients": [
-    "500g de farinha de trigo sem fermento",
-    "325ml de água morna",
-    "10g de fermento biológico seco",
-    "1 colher de chá de sal",
-    "1 colher de chá de açucar",
-    "1 colher de sopa de azeite ou óleo",
-    "200g de molho de tomate simples",
-    "250g de mussarela de búfala ou comum",
-    "Folhas de manjericão fresco agosto",
-    "Azeite extravirgem para finalizar"
-  ],
-  "instructions": [
-    "Misture a farinha, sal. Adicione a água e o azeite(óleo), misture o açucar com fermento e depois acrescente a mistura. Sove por 10 minutos.",
-    "Deixe a massa descansar coberta por 1 hora ou até dobrar de volume.",
-    "Divida em 2 bolas, abra com as mãos ou rolo em discos finos.",
-    "Fure a massa com o garfo e espalhe o molho de tomate, cubra com mussarela e leve ao forno a 250°C por 10-12 minutos.",
-    "Retire, adicione o manjericão fresco e um fio generoso de azeite. Sirva imediatamente."
-    ]
+    "id": "pizza-margherita",
+    "title": "Pizza Margherita Caseira",
+    "slug": "pizza-margherita",
+    "excerpt": "Massa fina e crocante, molho de tomate fresco, mussarela e manjericão. Sabor de Itália em casa.",
+    "image": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=800&q=80",
+    "date": "2024-12-01",
+    "author": "Chef Yum",
+    "categories": [
+      "Massas",
+      "Lanches"
+    ],
+    "difficulty": "Médio",
+    "prepTime": "30 minutos + 1h descanso",
+    "cookTime": "12 minutos",
+    "servings": "2 pizzas médias",
+    "description": "Receita clássica napolitana adaptada para o forno doméstico. O segredo está na massa bem fermentada e no forno bem quente.",
+    "ingredients": [
+      "500g de farinha de trigo tipo 00 (ou comum)",
+      "325ml de água morna",
+      "7g de fermento biológico seco",
+      "1 colher de chá de sal",
+      "1 colher de sopa de azeite",
+      "200g de molho de tomate simples",
+      "250g de mussarela de búfala ou comum",
+      "Folhas de manjericão fresco",
+      "Azeite extravirgem para finalizar"
+    ],
+    "instructions": [
+      "Misture a farinha, fermento e sal. Adicione a água e o azeite. Sove por 10 minutos.",
+      "Deixe a massa descansar coberta por 1 hora ou até dobrar de volume.",
+      "Divida em 2 bolas, abra com as mãos ou rolo em discos finos.",
+      "Espalhe o molho de tomate, cubra com mussarela e leve ao forno a 250°C por 10-12 minutos.",
+      "Retire, adicione o manjericão fresco e um fio generoso de azeite. Sirva imediatamente."
+    ],
+    "featured": true,
+    "featuredOrder": 4
   },
   {
     "id": "salmao-grelhado",
@@ -202,7 +224,10 @@
     "image": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80",
     "date": "2024-11-28",
     "author": "Chef Yum",
-    "categories": ["Peixes e Frutos do Mar", "Alimentação Saudável"],
+    "categories": [
+      "Peixes e Frutos do Mar",
+      "Alimentação Saudável"
+    ],
     "difficulty": "Fácil / Iniciante",
     "prepTime": "10 minutos",
     "cookTime": "12 minutos",
@@ -232,8 +257,10 @@
     "excerpt": "Bife suculento selado na frigideira com manteiga, alho e tomilho. Clássico de churrasco em casa.",
     "image": "https://images.unsplash.com/photo-1600891964092-4316c288032e?w=800&q=80",
     "date": "2024-11-25",
-    "author": "Chef humm",
-    "categories": ["Carnes"],
+    "author": "Chef Yum",
+    "categories": [
+      "Carnes"
+    ],
     "difficulty": "Médio",
     "prepTime": "5 minutos",
     "cookTime": "10 minutos",
@@ -263,7 +290,11 @@
     "image": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=800&q=80",
     "date": "2024-11-20",
     "author": "Chef Yum",
-    "categories": ["Bebidas", "Alimentação Saudável"],
+    "categories": [
+      "Bebidas",
+      "Alimentação Saudável",
+      "Liquidificador"
+    ],
     "difficulty": "Fácil / Iniciante",
     "prepTime": "5 minutos",
     "cookTime": "0 minutos",
@@ -283,105 +314,106 @@
       "Coloque todos os ingredientes no liquidificador.",
       "Bata até ficar homogêneo. Coe se preferir textura mais lisa.",
       "Sirva imediatamente com gelo e hortelã."
-        ]
-  },
-  {
-    "id": "farofa-maracuja",
-    "title": "Farofa de Maracujá Especial",
-    "slug": "farofa-maracuja",
-    "excerpt": "Farofa de Maracujá gostosa e crocante com a acidez do maracujá.",
-    "image": "https://images.pexels.com/photos/16976659/pexels-photo-16976659.jpeg",
-    "date": "2026-10-01",
-    "author": "Chef humm",
-    "categories": ["Acompanhamentos", "Alimentação Saudável"],
-    "difficulty": "Fácil / Iniciante",
-    "prepTime": "10 minutos",
-    "cookTime": "10 minutos",
-    "servings": "9 porções",
-    "description": "Farofa de Maracujá ideal para momentos especiais, farofa gostosa e crocante com a acidez do maracujá.",
-    "ingredients": [
-      "1 polpa de um maracujá",
-      "1/2 cebola grande",
-      "1 dente de alho",
-      "Salsa, coentro ou cebolinha a gosto",
-      "200gr de farinha de mandioca",
-      "100gr de Bacon",
-      "1 colher de margarina",
-      "Sal a gosto"
-    ],
-    "instructions": [
-      "Em uma panela coloque o bacon picado (não acrescente nenhuma gordura a mais) e deixe ele fritar na própria gordura.",
-      "Quando estiver dourado, acrescente a cebola picada, o alho amassado e a margarina e deixe refogando por 5 minutos.",
-      "Quando completar esse tempo, coloque a polpa do maracujá com semente e tudo, e deixe cozinhando em fogo baixo por mais 5 minutos.",
-      "Agora é só servir."
-       ]
-  },
-  {
-    "id": "salada-manga com peito de peru",
-    "title": "Salada de Alface com manga e peito de Peru",
-    "slug": "salada-especial",
-    "excerpt": "Salface, manga, peito de peru. Energia e leveza no prato.",
-    "image": "https://images.pexels.com/photos/3038242/pexels-photo-3038242.jpeg",
-    "date": "2026-10-26",
-    "author": "Chef humm",
-    "categories": ["saladas e molhos", "Alimentação Saudável"],
-    "difficulty": "Fácil / Iniciante",
-    "prepTime": "5 minutos",
-    "cookTime": "0 minutos",
-    "servings": "1 travessa",
-    "description": "salada leve, deliciosa, refrescante. para momentos especiais.",
-    "ingredients": [
-      "6 folhas de alface",
-      "1 manga tomy",
-      "1/2 limão (suco)",
-      "100gr peito de peru",
-      "Azeite a gosto",
-      "Sal a gosto",
-      "1 tomate e uma cebola",
-      "1/2 cenoura ralada",
-       "50 gr de amendoim sem casca"
-    ],
-    "instructions": [
-      "Lave bem a alface e a manga.",
-      "Corte a manga em tiras grossas e enrole no peito de perue leve ao forno por cinco minutos ate dar um leve dourada.",
-      "Deixe esfriar .",
-       "Corte o afcace e tiras e arrume em uma travessa.",
-      "Depois acrescente o tomate em fatias com cebolas em fatias tambem .",
-      "Acrencente a manga enrolada no peito de peru.",
-      "Acabe com o amendoim e azeite, limão e sal a gosto ."
-       ]
-  },
-  {
-    "id": "Salada de alho-poro",
-    "title": "Salada de alho-poró Especial",
-    "slug": "Salada de alho-poró",
-    "excerpt": "Salada de alho-poró .",
-    "image": "https://images.pexels.com/photos/27626299/pexels-photo-27626299.jpeg",
-    "date": "2026-10-03",
-    "author": "Chef humm",
-    "categories": ["sALADAS OU MOLHOS", "Alimentação Saudável"],
-    "difficulty": "Fácil / Iniciante",
-    "prepTime": "10 minutos",
-    "cookTime": "10 minutos",
-    "servings": "1 VASILHAS",
-    "description": "A salada de alho-poró é uma opção leve, nutritiva e versátil, combinando o sabor suave do alho-poró com frutas, legumes e molhos cremosos ou vinagretes.",
-    "ingredients": [
-      "2 talos de alho-poró",
-      "2 maçãs verdes sem casca e picadas",
-      "2 maços de rúcula",
-      "200 g de presunto picado",
-      "1 vidro de palmito picado",
-      "1 lata de milho",
-      "1 lata de ervilha",
-      "2 caixinhas de creme de leite",
-       "Maionese a gosto."
-    ],
-    "instructions": [
-      "Lave bem o alho-poró e corte apenas a parte branca em rodelas finas.",
-      "Em uma tigela grande, misture todos os ingredientes sólidos.",
-      "adicione o creme de leite e a maionese, mexendo bem até incorporar todos os sabores.",
-      "Agora é só servir gelada."
-     
     ]
+  },
+  {
+    "id": "vitamina-banana",
+    "title": "Vitamina de Banana com Aveia",
+    "slug": "vitamina-banana",
+    "excerpt": "Vitamina cremosa no liquidificador, pronta em 3 minutos.",
+    "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=800&q=80",
+    "date": "2026-10-10",
+    "author": "Chef Yum",
+    "categories": [
+      "Liquidificador",
+      "Bebidas",
+      "Alimentação Saudável"
+    ],
+    "difficulty": "Fácil / Iniciante",
+    "prepTime": "3 minutos",
+    "cookTime": "0 minutos",
+    "servings": "1 copo",
+    "description": "Bata tudo no liquidificador e pronto. Ideal para o café da manhã corrido.",
+    "ingredients": [
+      "1 banana madura",
+      "200ml de leite (ou vegetal)",
+      "2 colheres de sopa de aveia",
+      "1 colher de sopa de mel",
+      "Gelo a gosto"
+    ],
+    "instructions": [
+      "Coloque todos os ingredientes no liquidificador.",
+      "Bata por 30 a 60 segundos até ficar cremoso.",
+      "Sirva imediatamente."
+    ],
+    "featured": true,
+    "featuredOrder": 3
+  },
+  {
+    "id": "batata-airfryer",
+    "title": "Batata Crocante na Airfryer",
+    "slug": "batata-airfryer",
+    "excerpt": "Batatas douradas e crocantes sem fritura, só na airfryer.",
+    "image": "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?w=800&q=80",
+    "date": "2026-10-11",
+    "author": "Chef Yum",
+    "categories": [
+      "Airfryer",
+      "Lanches"
+    ],
+    "difficulty": "Fácil / Iniciante",
+    "prepTime": "10 minutos",
+    "cookTime": "20 minutos",
+    "servings": "2 porções",
+    "description": "Corte, tempere e leve à airfryer. Resultado crocante com pouco óleo.",
+    "ingredients": [
+      "3 batatas médias",
+      "1 colher de sopa de azeite",
+      "Sal, páprica e alho em pó a gosto"
+    ],
+    "instructions": [
+      "Corte as batatas em palitos ou cubos e seque bem.",
+      "Misture com azeite e temperos.",
+      "Airfryer a 200°C por 18-20 minutos, mexendo na metade do tempo.",
+      "Sirva quente."
+    ],
+    "featured": true,
+    "featuredOrder": 2
+  },
+  {
+    "id": "bolo-caneca",
+    "title": "Bolo de Caneca no Microondas",
+    "slug": "bolo-caneca",
+    "excerpt": "Bolo individual de chocolate pronto em 2 minutos no microondas.",
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=800&q=80",
+    "date": "2026-10-12",
+    "author": "Chef Yum",
+    "categories": [
+      "Microondas",
+      "Doces e Sobremesas",
+      "Bolos e tortas"
+    ],
+    "difficulty": "Fácil / Iniciante",
+    "prepTime": "3 minutos",
+    "cookTime": "2 minutos",
+    "servings": "1 caneca",
+    "description": "Misture na caneca, leve ao microondas e aproveite quentinho.",
+    "ingredients": [
+      "4 colheres de sopa de farinha de trigo",
+      "3 colheres de sopa de açúcar",
+      "2 colheres de sopa de cacau",
+      "1 ovo",
+      "3 colheres de sopa de leite",
+      "2 colheres de sopa de óleo",
+      "1/2 colher de chá de fermento"
+    ],
+    "instructions": [
+      "Misture os secos na caneca, depois o ovo, leite e óleo.",
+      "Adicione o fermento e misture bem.",
+      "Microondas em potência alta por 1 min 30 s a 2 min.",
+      "Deixe esfriar um pouco e sirva."
+    ],
+    "featured": true,
+    "featuredOrder": 1
   }
 ]
