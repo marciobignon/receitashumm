@@ -5,7 +5,10 @@ let currentFilter = 'all';
 let currentSearch = '';
 const FAV_KEY = 'yum_favorites';
 
-// ----- Favoritos (localStorage) -----
+// ----- Favoritos -----
+// 1) Manuais no JSON: "featured": true  (aparecem sempre no carrossel)
+// 2) Do visitante: localStorage (coração ❤️)
+
 function getFavorites() {
   try {
     return JSON.parse(localStorage.getItem(FAV_KEY) || '[]');
@@ -18,8 +21,13 @@ function saveFavorites(ids) {
   localStorage.setItem(FAV_KEY, JSON.stringify(ids));
 }
 
+function isFeatured(id) {
+  const r = recipes.find(x => x.id === id);
+  return !!(r && r.featured);
+}
+
 function isFavorite(id) {
-  return getFavorites().includes(id);
+  return isFeatured(id) || getFavorites().includes(id);
 }
 
 function toggleFavorite(id, event) {
@@ -27,14 +35,18 @@ function toggleFavorite(id, event) {
     event.stopPropagation();
     event.preventDefault();
   }
+  // Favorito manual (featured no JSON) não sai pelo coração — só pelo código
+  if (isFeatured(id)) {
+    alert('Esta receita é favorita fixa (definida no JSON com "featured": true).\nPara remover, edite o data/recipes.json e tire o featured.');
+    return;
+  }
   let favs = getFavorites();
   if (favs.includes(id)) {
     favs = favs.filter(x => x !== id);
   } else {
-    favs.unshift(id); // mais recente primeiro
+    favs.unshift(id);
   }
   saveFavorites(favs);
-  // Re-renderiza a tela atual
   if (document.querySelector('.recipe-hero')) {
     showRecipe(id);
   } else {
@@ -43,8 +55,33 @@ function toggleFavorite(id, event) {
 }
 
 function getFavoriteRecipes() {
-  const favs = getFavorites();
-  return favs.map(id => recipes.find(r => r.id === id)).filter(Boolean).slice(0, 8);
+  // 1) Manuais do JSON (ordem: featuredOrder crescente, depois data)
+  const manual = recipes
+    .filter(r => r.featured)
+    .sort((a, b) => {
+      const oa = a.featuredOrder != null ? a.featuredOrder : 999;
+      const ob = b.featuredOrder != null ? b.featuredOrder : 999;
+      if (oa !== ob) return oa - ob;
+      return (b.date || '').localeCompare(a.date || '');
+    });
+
+  // 2) Favoritos do navegador (visitante)
+  const userIds = getFavorites();
+  const user = userIds
+    .map(id => recipes.find(r => r.id === id))
+    .filter(Boolean)
+    .filter(r => !r.featured);
+
+  // Junta: manuais primeiro, depois os do visitante (sem repetir)
+  const seen = new Set();
+  const list = [];
+  for (const r of [...manual, ...user]) {
+    if (!seen.has(r.id)) {
+      seen.add(r.id);
+      list.push(r);
+    }
+  }
+  return list.slice(0, 8);
 }
 
 // Carrega as receitas do JSON
@@ -158,6 +195,18 @@ function renderHome() {
         <div class="icon"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=200&h=200&fit=crop&crop=center" alt="Saudável"></div>
         <span>Saudável</span>
       </div>
+      <div class="cat-card ${currentFilter === 'Liquidificador' ? 'active' : ''}" onclick="filterCategory('Liquidificador')">
+        <div class="icon"><img src="https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=120&h=120&fit=crop" alt="Liquidificador"></div>
+        <span>Liquidificador</span>
+      </div>
+      <div class="cat-card ${currentFilter === 'Airfryer' ? 'active' : ''}" onclick="filterCategory('Airfryer')">
+        <div class="icon"><img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=120&h=120&fit=crop" alt="Airfryer"></div>
+        <span>Airfryer</span>
+      </div>
+      <div class="cat-card ${currentFilter === 'Microondas' ? 'active' : ''}" onclick="filterCategory('Microondas')">
+        <div class="icon"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=120&h=120&fit=crop" alt="Microondas"></div>
+        <span>Microondas</span>
+      </div>
     </div>
 
     ${renderFavoritesCarousel()}
@@ -211,7 +260,7 @@ function renderFavoritesCarousel() {
       <section class="section favorites-section">
         <h2 class="section-title">Minhas receitas <span>Favoritas</span></h2>
         <div class="fav-empty">
-          <p>❤️ Clique no coração de uma receita para adicioná-la aqui.</p>
+          <p>❤️ Marque receitas com o coração, ou defina <code>featured: true</code> no JSON para fixar no carrossel.</p>
         </div>
       </section>
     `;
