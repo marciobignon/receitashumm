@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Receitas & Comida</title>
+  <meta name="description" content="Blog de dicas de cozinha, airfryer, liquidificador, microondas e alimentação.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo">Blog <span>Yum</span></div>
+      <nav>
+        <a href="#" onclick="event.preventDefault(); renderList();">Início</a>
+        <!-- TROQUE pela URL do seu site de receitas na Netlify -->
+        <a href="https://SEU-SITE-RECEITAS.netlify.app" target="_blank" rel="noopener">Receitas</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="app">
+    <p style="padding:60px;text-align:center;color:#6b7280">Carregando blog...</p>
+  </div>
+
+  <footer class="footer">
+    © Blog de Comida · Site estático para Netlify · Sem banco de dados
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
